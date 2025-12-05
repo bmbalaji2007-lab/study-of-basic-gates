@@ -1,18 +1,19 @@
-### study-of-basic-gates
-
-**AIM:** 
+# Study-of-basic-gates
+# Developed By: BALAJI B M
+# Ref.no: 25016669
+# AIM:
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-**Equipments Required:**
+# Equipments Required:
 
 Software – Quartus prime 
 
-**Theory**
+# Theory:
 
 Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
-AND gate OR gate NOT gate NAND gate NOR gate Ex-OR gate Ex-NOR gate
+AND gate, OR gate, NOT gate, NAND gate, NOR gate, Ex-OR gate, Ex-NOR gate
 
 **AND gate**
 
@@ -49,7 +50,7 @@ Y= A⊕B
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 Y= A⊕B
 
-**Procedure** 
+# Procedure:
 
 1.	Type the program in Quartus software.
 
@@ -62,18 +63,29 @@ Y= A⊕B
 5.	For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
+# PROGRAM:
+```
+module basic_gates(a,b,y1,y2,y3,y4,y5,y6);
+input a,b;
+output y1,y2,y3,y4,y5,y6;
+and g1(y1,a,b);
+or g2(y2,a,b);
+nand g3(y3,a,b);
+nor g4(y4,a,b);
+xor g5(y5,a,b);
+not g6(y6,a);
+endmodule 
+```
+# Logic symbol & Truthtable:
+<img width="891" height="588" alt="DE ex1 1" src="https://github.com/user-attachments/assets/dd059e83-7ed7-4e4f-a3c7-eb6e6933af96" />
 
-Program for logic gates and verify its truth table in quartus using Verilog programming
+# RTL realization Output:
+<img width="352" height="320" alt="DE ex1 2" src="https://github.com/user-attachments/assets/b9bfe85e-78f0-41f9-ac95-0afb5125a1ad" />
 
- Developed by: RegisterNumber: 
- 
-**Logic symbol & Truthtable**
-
-**RTL realization Output:** 
-
-**RTL**
-
-**Result:**
+# RTL:
+<img width="1920" height="1080" alt="DE ex1 3" src="https://github.com/user-attachments/assets/b00fb678-3683-4d43-b806-d44ebf1a109a" />
 
 
+# Result:
+
+Thus the truth table of logic gates in quartus II using verilog programming is studied and verified succesfully.
